@@ -83,3 +83,9 @@ Kortix, OpenHands, Open WebUI, AnythingLLM and Dify all accept your own model pr
 Kortix is open source: read it, fork it, audit it, and self-host for free.
 
 Get started with open-source Kortix at [kortix.com](https://kortix.com), or read the code at [Kortix on GitHub](https://github.com/kortix-ai/suna).
+
+The site's three-way comparisons continue the field: [Perplexity Computer vs ChatGPT Work](https://opensourceperplexitycomputer.com/perplexity-computer-vs-chatgpt-work), [Perplexity Computer vs Manus](https://opensourceperplexitycomputer.com/perplexity-computer-vs-manus), and the [limitations rundown](https://opensourceperplexitycomputer.com/perplexity-computer-limitations).
+
+### Migrating
+
+Moving an existing setup onto the open source system it compares is covered in the [migration runbook](https://opensourceperplexitycomputer.com/migrate-from-perplexity-computer).
