@@ -88,4 +88,4 @@ The site's three-way comparisons continue the field: [Perplexity Computer vs Cha
 
 ### Migrating
 
-Moving an existing setup onto the open source system it compares is covered in the [migration runbook](https://opensourceperplexitycomputer.com/migrate-from-perplexity-computer).
+Moving an existing setup onto the open source system it compares is covered in the [migration runbook](https://opensourceperplexitycomputer.com/migrate-from-perplexity-computer). What the product is, in Perplexity's own words, is the [what is a Perplexity Computer](https://opensourceperplexitycomputer.com/what-is-a-perplexity-computer) explainer, and the [pricing rundown](https://opensourceperplexitycomputer.com/perplexity-computer-pricing) sets the hosted credit meter beside self-hosting.
