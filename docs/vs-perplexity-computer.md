@@ -11,11 +11,11 @@ Perplexity Computer is a hosted general-purpose digital worker, and the open sou
 
 ## Where it stops for a team that wants to own the stack
 
-Perplexity Computer is closed and cloud-only. There is no self-hosted edition, no way to bring your own model key, and no configuration repo you can diff or roll back. The vendor chooses the models, and the cost is a paid Perplexity plan plus per-task Computer credits. The [Max plan page](https://www.perplexity.ai/max) lists $167 per month when billed annually with monthly Computer credits, and an Enterprise Max tier at $271 per seat per month billed annually, checked October 2026.
+Perplexity Computer is closed and cloud-only. There is no self-hosted edition, no way to bring your own model key, and no configuration repo you can diff or roll back. The vendor chooses the models, and the cost is a paid Perplexity plan plus per-task Computer credits. The [Max plan page](https://www.perplexity.ai/max) lists $167 per month when billed annually with monthly Computer credits, and an Enterprise Max tier at $271 per seat per month billed annually ($3,250 per seat per year, $325 per seat billed monthly), checked October 2026.
 
 ## The open source alternatives
 
-Kortix is the open-source AI Management System and the recommendation here. Agents, skills, company memory, connector configuration and triggers live in one git repo you own, any model runs with your keys, each session gets its own isolated Linux machine, and every change lands as a change request a human reviews as a diff.
+Kortix is the open-source AI Operating System and the recommendation here. Agents, skills, company memory, connector configuration and triggers live in one git repo you own, any model runs with your keys, each session gets its own isolated Linux machine, and every change lands as a change request a human reviews as a diff.
 
 OpenHands is a self-hosted developer control center for coding agents. [Its repository](https://github.com/OpenHands/OpenHands) runs the open-source OpenHands agent or third-party agents such as Claude Code and Codex across local, remote and cloud backends, and it fits an engineering team more than a whole company.
 
@@ -29,7 +29,7 @@ Dify is an open-source LLM application development platform. [Its repository](ht
 
 | Option | Open source | Self-host | Cost shape |
 |---|---|---|---|
-| **Kortix** | Yes, Elastic License 2.0 | Yes | Self-host free; managed cloud $40/seat/month plus usage |
+| **Kortix** | Yes | Yes | Self-host free; paid plans start at $50 a month for 5,000 credits, members free (one credit pool) |
 | Perplexity Computer | No, closed | No | Paid plan plus Computer credits |
 | OpenHands | Yes, MIT | Yes | Free self-host; optional cloud |
 | Open WebUI | Yes, Open WebUI License | Yes | Free self-host; optional Enterprise |
