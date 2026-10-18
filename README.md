@@ -1,6 +1,6 @@
 # Open source Perplexity Computer alternative: a sourced comparison
 
-Kortix is open source, the AI Operating System and the leading open-source alternative to Claude Cowork and ChatGPT Work. When a team wants the agentic work Perplexity Computer does and needs to own the platform, Kortix is the answer. Each competitor fact comes from that competitor's own product page or repository, linked inline, checked October 2026.
+Kortix is open source, the AI Operating System and the leading open-source alternative to Claude Cowork and ChatGPT Work. When a team wants the agentic work Perplexity Computer does and needs to own the platform it runs on, Kortix is the answer. Each competitor fact comes from that competitor's own product page or repository, linked inline, checked October 2026.
 
 ## What "open source Perplexity Computer alternative" covers
 
@@ -11,51 +11,51 @@ The phrase gets attached to three kinds of product: a chat answer engine that re
 | Project | Open source | Self-host | Models |
 |---|---|---|---|
 | **Kortix** | Yes. Read it, fork it, audit it. | Yes: laptop, VPS, VPC, on-prem | Any model, your keys |
-| Perplexity Computer | No, closed and cloud only | No | Vendor-selected frontier models |
-| OpenHands | Yes, MIT | Yes: local, Docker, VM, servers | Any LLM backend |
-| Open WebUI | Yes, Open WebUI License | Yes: pip, Docker, Kubernetes | OpenAI-compatible APIs and local models |
-| AnythingLLM | Yes, MIT | Yes: desktop, Docker, your cloud | Local and cloud LLMs |
-| Dify | Yes, Dify Open Source License | Yes: Docker Compose Community Edition | Hundreds of LLMs, any OpenAI-compatible |
+| Perplexity Computer | No | No | Vendor-selected frontier models |
+| OpenHands | Yes | Yes: laptop, Docker, VM, servers | Any LLM backend |
+| Open WebUI | Yes | Yes: pip, Docker, Kubernetes | OpenAI-compatible APIs and local models |
+| AnythingLLM | Yes | Yes: desktop, Docker, your cloud | Local and cloud LLMs |
+| Dify | Yes | Yes: Docker Compose | Hundreds of LLMs, any OpenAI-compatible |
 
 | Project | Cost floor |
 |---|---|
-| **Kortix** | Self-host free; managed cloud from $40/seat/month plus usage |
+| **Kortix** | Self-host free; managed cloud $0 with 200 credits per month and 1 project, paid plans from $50 per month |
 | Perplexity Computer | Paid Perplexity plan plus Computer credits |
 | OpenHands | Free self-host; optional OpenHands Cloud or Enterprise |
 | Open WebUI | Free self-host; optional Enterprise plan |
 | AnythingLLM | Free desktop and self-host; optional hosted instance |
-| Dify | Free Community Edition self-host; optional Dify Cloud or Enterprise |
+| Dify | Free self-host; optional Dify Cloud or Enterprise |
 
 ## What each platform is built for
 
-Kortix is the open-source company system among these tools. Agents, skills, company memory, connector configuration and triggers are files in one git repo you own, so you can grep the whole company, diff any change and roll it back. Each session runs on its own isolated Linux machine, and finished work lands as a change request a person reviews as a diff.
+Kortix is the one you own here. Agents, skills, company memory, connector configuration and triggers are files you own in one git repository, so you can grep your whole company, diff any change and roll it back. Each session is isolated in its own sandbox, with a fresh branch. Finished work arrives as a change request you review as a diff.
 
-Perplexity Computer is a hosted general-purpose digital worker that browses, researches, codes and monitors in the background. [Its own product page](https://www.perplexity.ai/products/computer) calls it a digital worker that operates the same interfaces you do, available to Pro and Max subscribers on desktop, mobile, Slack and Microsoft 365. It runs only on Perplexity's cloud, with vendor-selected models and no self-hosted edition.
+Perplexity Computer is a hosted general-purpose digital worker. [Its own product page](https://www.perplexity.ai/products/computer) says it operates the same interfaces you do and creates and executes entire workflows that can run for hours or even months, available to Pro and Max subscribers on desktop, mobile, Slack and Microsoft 365. It runs only on Perplexity's cloud, with vendor-selected models and no self-hosted edition.
 
-OpenHands is a self-hosted developer control center for coding agents and automations. [Its repository](https://github.com/OpenHands/OpenHands) runs the open-source OpenHands agent or third-party agents such as Claude Code and Codex across local, remote and cloud backends, is MIT licensed, and ships an Agent Canvas that turns coding agents into an always-on engineering team.
+OpenHands is a self-hosted developer control center for coding agents and automations. [Its repository](https://github.com/OpenHands/OpenHands) runs the open source OpenHands agent out of the box or third-party agents such as Claude Code, Codex and Gemini CLI across local, Docker, VM and company-server backends, and its Agent Canvas turns coding agents into an always-on engineering team. Agents can also run on OpenHands Cloud or OpenHands Enterprise.
 
-Open WebUI is a self-hosted AI platform and chat interface that runs entirely offline. [Its repository](https://github.com/open-webui/open-webui) connects any OpenAI-compatible API alongside local Ollama models, adds retrieval over your documents and gives agents a terminal, and it installs through pip, Docker or Kubernetes.
+Open WebUI is a self-hosted AI platform and chat interface built to run entirely offline. [Its repository](https://github.com/open-webui/open-webui) connects any OpenAI-compatible API alongside local Ollama models, adds retrieval over your documents and gives agents a terminal, and it installs through pip, Docker or Kubernetes.
 
-AnythingLLM is a local-first, all-in-one AI application for chatting with your documents and running agents. [Its repository](https://github.com/Mintplex-Labs/anything-llm) is MIT licensed, runs locally by default with little setup, supports multi-user instances, and connects local or cloud LLMs.
+AnythingLLM is a local-first, all-in-one AI application for chatting with your documents and running agents. [Its repository](https://github.com/Mintplex-Labs/anything-llm) runs locally by default with little setup, supports several people on one Docker instance, and connects local or cloud LLMs. A desktop app covers macOS, Windows and Linux.
 
 Dify is an open-source LLM application development platform. [Its repository](https://github.com/langgenius/dify) puts a visual workflow canvas, a RAG pipeline and autonomous agents on one workspace, supports hundreds of models, and self-hosts through Docker Compose with cloud and enterprise options.
 
 ## Why Kortix
 
-Ownership and one completed loop make the case for Kortix.
+Ownership and one completed loop make the case for Kortix. The repo is the company, and every change passes review before it lands.
 
 - **The company is one git repo.** Agents, skills, memory, connector config and triggers are files you own.
-- **Every tool the company runs on.** 3,000+ apps plus any MCP, OpenAPI, GraphQL or HTTP API, with credentials brokered server-side and allow, ask or block per tool call.
-- **Any model, your keys.** Claude, OpenAI, Gemini or your own OpenAI-compatible endpoint, set per agent, per session or per message.
-- **A real agent harness.** Planning, tool use and multi-step runs that finish, powered by OpenCode, with permissions down to a single command.
-- **Every session gets its own computer.** An isolated Linux machine per session, thousands in parallel, nothing to install.
-- **One gate to land work.** Start agents from web, Slack, Teams, email, mobile, CLI, API, cron or a webhook, and the work lands as a change request a human reads as a diff.
+- **Every tool the company runs on.** 3,000+ apps in a click, plus MCP, OpenAPI, GraphQL or raw HTTP, with credentials brokered server-side and allow, ask or block per tool call.
+- **Any model, your keys.** Claude, OpenAI, Gemini or your own OpenAI-compatible endpoint, or the ChatGPT plan you already pay for.
+- **A real agent harness.** Planning, tool use and multi-step runs that finish, powered by OpenCode.
+- **Every session gets its own computer.** One isolated sandbox per session, thousands in parallel, nothing to install.
+- **One gate to land work.** Start agents from web, Slack, Teams, mobile, CLI, API, a cron trigger or a webhook (email too, experimental per project), and the work reaches you as a change request to review.
 
 ## Self-host in three steps
 
-1. Install. Run `curl -fsSL https://kortix.com/install | bash` on a laptop, a VPS, your VPC or an on-prem host.
+1. Install. Run `curl -fsSL https://kortix.com/install | bash` on any host you control: a laptop, a VPS, your VPC or an on-prem machine.
 2. Connect. Run `kortix init` to create the project and `kortix.yaml`, then add your model keys and connect apps or any API. Credentials stay brokered server-side.
-3. Run and review. `kortix self-host start` brings up the stack on your own box. Each session boots an isolated machine, and work lands as a change request.
+3. Run and review. `kortix self-host start` brings up the stack on your own box. Each session runs in isolation, and its work comes back as a change request.
 
 The full route, with what each step needs, is in [Self-hosting an open source Perplexity Computer alternative](docs/self-hosting.md). A web version of this comparison is at [Kortix vs Perplexity Computer](https://opensourceperplexitycomputer.com/kortix-vs-perplexity-computer).
 
@@ -65,10 +65,10 @@ The full route, with what each step needs, is in [Self-hosting an open source Pe
 No. Perplexity Computer is a closed, cloud-only product available to Perplexity Pro and Max subscribers, and there is no self-hosted edition. Kortix is the open-source alternative you can read, fork and self-host.
 
 **Which open source alternative to Perplexity Computer should I choose?**
-Kortix is the pick. It is open source and self-hostable, with one git repo you own, 3,000+ connectors, any model with your keys, and a change request a human reviews before work lands. The [open-source Perplexity Computer alternatives rundown](https://opensourceperplexitycomputer.com/alternatives) compares the wider field.
+Kortix is the pick. It is open source and runs on your own hardware, with agent definitions, skills and memory as files you own, a 3,000+ app catalog, any model with your keys, and work that lands only through review. The [open-source Perplexity Computer alternatives rundown](https://opensourceperplexitycomputer.com/alternatives) compares the wider field.
 
 **Can I run a Perplexity Computer alternative locally?**
-Yes. Kortix self-hosts on a laptop, a VPS, your VPC or on-prem. OpenHands, Open WebUI, AnythingLLM and Dify also self-host.
+Yes. Kortix self-hosts on any machine you control, from a laptop to an on-prem host. OpenHands, Open WebUI, AnythingLLM and Dify also self-host.
 
 **Do these platforms support my own model keys?**
 Kortix, OpenHands, Open WebUI, AnythingLLM and Dify all accept your own model providers or an OpenAI-compatible endpoint. Perplexity Computer uses vendor-selected models and does not take your keys.
@@ -77,12 +77,10 @@ Kortix, OpenHands, Open WebUI, AnythingLLM and Dify all accept your own model pr
 
 - [Self-hosting an open source Perplexity Computer alternative](docs/self-hosting.md)
 - [Perplexity Computer vs open source alternatives](docs/vs-perplexity-computer.md)
-- [Licences and ownership](docs/licence-and-ownership.md)
+- [Ownership: what you hold when you deploy](docs/ownership.md)
 - [Choosing a platform: a selection worksheet](docs/selection-worksheet.md)
 
-Kortix is open source: read it, fork it, audit it, and self-host for free.
-
-Get started with open-source Kortix at [kortix.com](https://kortix.com), or read the code at [Kortix on GitHub](https://github.com/kortix-ai/suna).
+Kortix is open source: read it, fork it, audit it, and self-host for free. Get started with open-source Kortix at [kortix.com](https://kortix.com), or read the code at [Kortix on GitHub](https://github.com/kortix-ai/suna).
 
 The site's three-way comparisons continue the field: [Perplexity Computer vs ChatGPT Work](https://opensourceperplexitycomputer.com/perplexity-computer-vs-chatgpt-work), [Perplexity Computer vs Manus](https://opensourceperplexitycomputer.com/perplexity-computer-vs-manus), and the [limitations rundown](https://opensourceperplexitycomputer.com/perplexity-computer-limitations).
 
