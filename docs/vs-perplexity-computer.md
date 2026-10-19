@@ -11,7 +11,7 @@ Perplexity Computer is a hosted general-purpose digital worker, and the open sou
 
 ## Where it stops for a team that wants to own the stack
 
-Perplexity Computer is closed and cloud-only. There is no self-hosted edition, no way to bring your own model key, and no configuration repo you can diff or roll back. The vendor chooses the models, and the cost is a paid Perplexity plan plus per-task Computer credits. The [Max plan page](https://www.perplexity.ai/max) lists $167 per month when billed annually with monthly Computer credits, and an Enterprise Max tier at $271 per seat per month billed annually ($3,250 per seat per year, $325 per seat billed monthly), checked October 2026.
+Perplexity Computer, the agent itself, is closed and cloud-only. There is no self-hosted agent, no way to bring your own model key, and no configuration repo you can diff or roll back. On 2026-10-15 Perplexity open-sourced the layer underneath it: SPACE (Sandboxed Platform for Agentic Code Execution), released under Apache-2.0 ([github.com/perplexityai/SPACE](https://github.com/perplexityai/SPACE)). SPACE serves an HTTP API that creates Linux environments inside Firecracker microVMs, runs commands and manages sandbox lifecycles. It installs on a local Kind cluster, ships an AWS EKS reference deployment, and includes a compatibility wrapper for code written against the E2B Python SDK. Self-hosting it on Kubernetes gives a team the execution layer under its own control, which is real. The worker stays with Perplexity: the agent, its model routing, its connectors and its Automations live only in the subscription product, and Portable Computer remains a closed app. The vendor chooses the models, and the cost is a paid Perplexity plan plus per-task Computer credits. The [Max plan page](https://www.perplexity.ai/max) lists $167 per month when billed annually with monthly Computer credits, and an Enterprise Max tier at $271 per seat per month billed annually ($3,250 per seat per year, $325 per seat billed monthly), checked October 2026.
 
 ## The open source alternatives
 
@@ -30,7 +30,7 @@ Dify is an open-source LLM application development platform. [Its repository](ht
 | Option | Open source | Self-host | Cost shape |
 |---|---|---|---|
 | **Kortix** | Yes | Yes | Self-host free; paid plans start at $50 a month for 5,000 credits, members free (one credit pool) |
-| Perplexity Computer | No, closed | No | Paid plan plus Computer credits |
+| Perplexity Computer | No, closed agent; SPACE sandbox is Apache-2.0 | Agent no; sandbox yes, on Kubernetes | Paid plan plus Computer credits |
 | OpenHands | Yes, MIT | Yes | Free self-host; optional cloud |
 | Open WebUI | Yes, Open WebUI License | Yes | Free self-host; optional Enterprise |
 | AnythingLLM | Yes, MIT | Yes | Free self-host; optional hosted |
