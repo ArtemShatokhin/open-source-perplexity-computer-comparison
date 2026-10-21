@@ -19,7 +19,7 @@ The phrase gets attached to three kinds of product: a chat answer engine that re
 
 | Project | Cost floor |
 |---|---|
-| **Kortix** | Self-host free; managed cloud $0 with 200 credits per month and 1 project, paid plans from $50 per month |
+| **Kortix** | Free is $0 with 500 credits per month, every feature and 1 project, on your own provider keys or ChatGPT subscription; managed models on the Credits plan; paid plan 25 tiers from $50 a month (5,000 credits) |
 | Perplexity Computer | Paid Perplexity plan plus Computer credits |
 | OpenHands | Free self-host; optional OpenHands Cloud or Enterprise |
 | Open WebUI | Free self-host; optional Enterprise plan |
@@ -87,3 +87,14 @@ The site's three-way comparisons continue the field: [Perplexity Computer vs Cha
 ### Migrating
 
 Moving an existing setup onto the open source system it compares is covered in the [migration runbook](https://opensourceperplexitycomputer.com/migrate-from-perplexity-computer). What the product is, in Perplexity's own words, is the [what is a Perplexity Computer](https://opensourceperplexitycomputer.com/what-is-a-perplexity-computer) explainer, and the [pricing rundown](https://opensourceperplexitycomputer.com/perplexity-computer-pricing) sets the hosted credit meter beside self-hosting.
+
+### Appendix: what each comparison page settles
+
+The verdict rests on six pages, each sourced to the vendor page or repository it judges. Read them in the order a decision reaches them.
+
+- [What a Perplexity Computer is](https://opensourceperplexitycomputer.com/what-is-a-perplexity-computer): Perplexity's own definition, where hardware enters, and what the name leaves out.
+- [Perplexity Computer pricing](https://opensourceperplexitycomputer.com/perplexity-computer-pricing): every plan tier, what a credit buys in dollars and tasks, and the open-source floor.
+- [Perplexity Max](https://opensourceperplexitycomputer.com/perplexity-max): the $200 tier priced out, 10,000 credits against the hours a running machine bills.
+- [Perplexity Computer vs Manus](https://opensourceperplexitycomputer.com/perplexity-computer-vs-manus): two closed meters side by side, separating what both vendors share from what Perplexity chose alone.
+- [The limitations rundown](https://opensourceperplexitycomputer.com/perplexity-computer-limitations): six constraints of a closed agent, each turned into the decision it forces.
+- [The migration runbook](https://opensourceperplexitycomputer.com/migrate-from-perplexity-computer): the verdict as work, rebuilding one job, running both for a week, then retiring the old version.
